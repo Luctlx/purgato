@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PURGATO</title>
+    <link rel="stylesheet" href="css/telainicial.css" />
+    <link rel="shortcut icon" href="PURGATO_SITELOGO.PNG" type="image">
+    <script src="https://kit.fontawesome.com/d7b8ac981d.js" crossorigin="anonymous"></script>
+    <style>
+      * {
+      margin: 0;
+      font-family:sans-serif
+      }
+
+      body {
+      background-color: aliceblue;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      }
+
+      .user {
+      font-family: sans-serif;
+      position: relative;
+      left: 35px;
+      top: 35px;
+      }
+
+      nav {
+      height: 100%;
+      max-width: 270px;
+      background-color: #b6cae4;
+      color: aliceblue;
+      position: fixed;
+      }
+
+      nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: inline-block;
+      position: relative;
+      top: 150px;
+      }
+
+      nav ul li {
+      background-color: #b6cae4;
+      font-size: 30px;
+      border-top: 2px solid aliceblue;
+      }
+
+      nav ul li :hover {
+      background-color: #7a96af;
+      }
+
+      nav ul li a {
+      background-color: #b6cae4;
+      padding: 10px;
+      display: block;
+      color: #f0f8ff;
+      text-decoration: none;
+      }
+
+      .ultima {
+      border-bottom: 2px solid aliceblue;
+      }
+
+      .container{
+      border-radius: 5px;
+      height: 860px;
+      width: 800px;
+      position: fixed;
+      left: 280px;
+      top: 39px;
+      }
+
+      input {
+      padding: 3px;
+      border-radius: 5px;
+      width: 750px;
+      border-color: #7a96af;
+      position: relative;
+      left: 10px;
+      font-size: 19px;  
+      }
+
+      label{
+      font-size: 20px;
+      position: relative ;
+      left: 15px;
+      }
+
+      input::placeholder {
+      font-size: 19px;
+      }
+
+      .tabela {
+      padding: 2px;
+      background-color: #000000;
+      color: #f0f8ff;
+      width: 770px;
+      height: 18px;
+      position: relative;
+      left: 10px;
+      top: 10px;
+      display: flex;
+      justify-content: space-between;
+      }
+
+      .logo {
+      position: relative;
+      left: 1150px;
+      top: 70px;
+      width: 100px;
+      height: 100px;
+      color: aliceblue;
+      }
+
+      .num {
+      position: relative;
+      text-align: left;
+      font-size: large;
+      left: 35px;
+      }
+
+     .cond {
+      position: relative;
+      right: 25px;
+      }
+
+      .exemplo1 {
+      border: 2px solid #7a96af;
+      border-radius: 5px;
+      padding: 20px;
+      width: 730px;
+      height: 30px;
+      position: relative;
+      top: 26px;
+      left: 10px;
+      font-size: medium;
+        display: flex;
+      justify-content: space-between;
+      }
+    .num1 {
+     position: relative;
+     left: 30px;
+    font-size: larger;
+    }
+    .nome1 {
+     position: relative;
+     left: 30px;
+    font-size: larger;
+    }
+    .cpf1 {
+     position: relative;
+     left: 30px;
+    font-size: larger;
+    }
+    .cond1 {
+    position: relative;
+    font-size: larger;
+    right: 15px;
+    }
+    button{
+    padding: 5px;
+    background-color:#b6cae4;
+    color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid #b6cae4;
+    }
+    button:hover {
+    background-color: #7a96af;}
+
+
+        .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s;
+        }
+
+        .conteudo-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #b6cae4;
+        }
+
+        .fechar-modal {
+        display: block;
+        margin-top: 10px;
+        }
+
+        .abrir-modal:focus + .modal,
+        .modal:target {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0s, 0s;
+        }
+
+      </style>
+  </head>
+  <body>
+    <nav>
+      <div class="user">
+        <h1><i class="fa-solid fa-user" style="color: #ffffff"></i> - Funcionário </h1>
+        <p><h6> Nome do funcionário </h6></p>
+        </div>
+      <div class="lista">
+        <ul>
+          <li>
+            <a href="telainicial.html"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff"></i>Início</a>
+          </li>
+          <li>
+            <a href="telacliente.html"><i class="fa-solid fa-user" style="color: #ffffff"></i> Clientes</a>
+          </li>
+          <li>
+            <a href="telamaquinas.html"><i class="fa-solid fa-soap" style="color: #ffffff"></i> Máquinas</a>
+          </li>
+          <li>
+            <a href="telaalugueis.html"><i class="fa-solid fa-wand-magic-sparkles"style="color: #ffffff"></i>Aluguéis</a>
+          </li>
+          <li>
+            <div class="ultima">
+              <a href="#"><i class="fa-solid fa-bars" style="color: #ffffff"></i>Configurações</a> 
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <label for="pesquisa"> Aluguéis </label>
+      <input type="text" id="pesquisa" name="pesquisa"
+      placeholder="Pesquise aqui...">
+
+      <div class="tabela">
+        <div class="num"> <p>Número</p> </div>
+        <div class="nome"> <p>Cliente</p> </div>
+        <div class="data"> <p>Data</p> </div>
+        <div class="valor"> <p>Valor total</p> </div>
+        <div class="cond"> <p>Condição</p> </div>
+      </div>
+        <div class="exemplo1"> 
+        <div class="num1"> <p>1</p> </div>
+        <div class="nome1"> <p>O Luiz Cabral</p> </div>
+        <div class="data1"> <p>22/04/2023</p> </div>
+        <div class="valor1"> <p>34,99</p> </div>
+        <button type="button" class="abrir-modal">Aluguel feito</button>
+        <div class="modal">
+        <div class="conteudo-modal">
+            <h2>Aluguel</h2>
+            <p>O aluguel foi pago no valor de 34,99</p>
+            <p>Horário: 15:35</p>
+            <p>Cliente: Luiz Cabral</p>
+            <p>Forma de pagamento: Pix </p>
+            <button class="fechar-modal">Fechar modal</button>
+        </div>
+        </div>
+        </div>  
+      </div>
+  </body>
+</html>
